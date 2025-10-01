@@ -1,0 +1,5 @@
+tallercoloresdiegomeza.Bombero
+tallercoloresdiegomeza.TallerColoresDiegoMeza
+tallercoloresdiegomeza.TrajeTermico
+tallercoloresdiegomeza.Uniforme
+tallercoloresdiegomeza.Hacha
