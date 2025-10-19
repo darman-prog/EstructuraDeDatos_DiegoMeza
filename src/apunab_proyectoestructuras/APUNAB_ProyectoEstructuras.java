@@ -4,23 +4,25 @@
  */
 package apunab_proyectoestructuras;
 
+import apunab_proyectoestructuras.Utils.LoginApunabPanel;
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
-/**
- *
- * @author damez
- */
-public class APUNAB_ProyectoEstructuras extends LoginApunab{
+import javax.swing.*;
+
+public class APUNAB_ProyectoEstructuras {
 
     public static void main(String[] args) {
-        LoginApunab Modificador = new LoginApunab();
-        Modificador.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        JFrame ventana = new JFrame("PadiLuck");
+        LoginApunabPanel panelLogin = new LoginApunabPanel();
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Dimension pantalla = Toolkit.getDefaultToolkit().getScreenSize();
-        Modificador.setSize(pantalla.width, pantalla.height);
-        Modificador.setTitle("APUNAB");
-        Modificador.setVisible(true);
-
-        
+        ventana.setSize(pantalla.width, pantalla.height);
+        ventana.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        ventana.setUndecorated(false); 
+        ventana.getContentPane().add(panelLogin);
+        ventana.setLocationRelativeTo(null);
+        ventana.setVisible(true);
     }
-    
+
 }
