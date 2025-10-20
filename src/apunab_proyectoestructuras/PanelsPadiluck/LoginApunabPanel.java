@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-package apunab_proyectoestructuras.Utils;
+package apunab_proyectoestructuras.PanelsPadiluck;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -433,7 +433,7 @@ public class LoginApunabPanel extends javax.swing.JPanel {
 
         if (window instanceof JFrame frame) {
             // Crear el nuevo panel de registro
-            apunab_proyectoestructuras.Utils.SignUpApunab panelRegistro = new apunab_proyectoestructuras.Utils.SignUpApunab();
+            apunab_proyectoestructuras.PanelsPadiluck.SignUpApunab panelRegistro = new apunab_proyectoestructuras.PanelsPadiluck.SignUpApunab();
 
             // Cambiar el contenido del JFrame (reemplaza el panel actual por el nuevo)
             frame.getContentPane().removeAll();
@@ -447,7 +447,7 @@ public class LoginApunabPanel extends javax.swing.JPanel {
         java.awt.Window window = SwingUtilities.getWindowAncestor(this);
 
         if (window instanceof JFrame frame) {
-            apunab_proyectoestructuras.Utils.SignUpApunab panelRegistro = new apunab_proyectoestructuras.Utils.SignUpApunab();
+            apunab_proyectoestructuras.PanelsPadiluck.SignUpApunab panelRegistro = new apunab_proyectoestructuras.PanelsPadiluck.SignUpApunab();
 
             frame.getContentPane().removeAll();
             frame.getContentPane().add(panelRegistro);
@@ -474,54 +474,23 @@ public class LoginApunabPanel extends javax.swing.JPanel {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
-    private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
     private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel19;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JPasswordField jPasswordField2;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables

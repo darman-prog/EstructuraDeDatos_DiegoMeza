@@ -4,7 +4,7 @@
  */
 package apunab_proyectoestructuras;
 
-import apunab_proyectoestructuras.Utils.LoginApunabPanel;
+import apunab_proyectoestructuras.PanelsPadiluck.LoginApunabPanel;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Toolkit;
