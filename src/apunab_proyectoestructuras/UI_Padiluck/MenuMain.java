@@ -4,12 +4,22 @@
  */
 package apunab_proyectoestructuras.UI_Padiluck;
 
+import java.awt.Color;
+import java.awt.Cursor;
+import java.awt.Font;
+import java.awt.GradientPaint;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.RenderingHints;
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JComponent;
 import javax.swing.JPanel;
 
-/**c
+/**
+ * c
  *
  * @author damez
  */
@@ -22,8 +32,15 @@ public class MenuMain extends javax.swing.JFrame {
 
     public MenuMain() {
         this.setContentPane(fondo);
-
         initComponents();
+        aplicarEstiloCasino(BtnPerfil);
+        aplicarEstiloCasino(jButton2);
+        aplicarEstiloCasino(jButton3);
+        aplicarEstiloCasino(jButton4);
+        aplicarEstiloCasino(jButton5);
+        aplicarEstiloCasino(jButton6);
+        aplicarEstiloCasino(jButton7);
+        aplicarEstiloCasino(jButton8);
     }
 
     /**
@@ -35,21 +52,100 @@ public class MenuMain extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        jPanel1 = new PanelConDegradado();
+        jPanel2 = new PanelRojoAzul();
+        BtnPerfil = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(227, 15, 30));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        BtnPerfil.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        BtnPerfil.setText("Perfil");
+        BtnPerfil.setToolTipText("");
+
+        jButton2.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        jButton2.setText("Lugares");
+
+        jButton3.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        jButton3.setText("Historial");
+
+        jButton4.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        jButton4.setText("Estadisticas");
+
+        jButton5.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        jButton5.setText("Minijuegos");
+
+        jButton6.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        jButton6.setText("Juego de preguntas");
+
+        jButton7.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        jButton7.setText("Apuestas");
+
+        jButton8.setFont(new java.awt.Font("Cambria", 1, 12)); // NOI18N
+        jButton8.setText("Cerrar sesión");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(18, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jButton8)
+                    .addComponent(jButton7)
+                    .addComponent(jButton6)
+                    .addComponent(jButton5)
+                    .addComponent(jButton4)
+                    .addComponent(jButton3)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BtnPerfil, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15))
+        );
+
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {BtnPerfil, jButton2, jButton3, jButton4, jButton5, jButton6, jButton7, jButton8});
+
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addComponent(BtnPerfil)
+                .addGap(30, 30, 30)
+                .addComponent(jButton2)
+                .addGap(31, 31, 31)
+                .addComponent(jButton3)
+                .addGap(30, 30, 30)
+                .addComponent(jButton4)
+                .addGap(30, 30, 30)
+                .addComponent(jButton5)
+                .addGap(30, 30, 30)
+                .addComponent(jButton6)
+                .addGap(27, 27, 27)
+                .addComponent(jButton7)
+                .addGap(27, 27, 27)
+                .addComponent(jButton8)
+                .addContainerGap(61, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 581, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 339, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -107,6 +203,21 @@ public class MenuMain extends javax.swing.JFrame {
         });
     }
 
+    class PanelConDegradado extends JPanel {
+
+        @Override
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+            Graphics2D g2 = (Graphics2D) g;
+            GradientPaint gp = new GradientPaint(
+                    0, 0, new Color(142, 14, 0),
+                    0, getHeight(), new Color(12, 12, 12)
+            );
+            g2.setPaint(gp);
+            g2.fillRect(0, 0, getWidth(), getHeight());
+        }
+    }
+
     class FondoPanel extends JPanel {
 
         private Image imagen;
@@ -124,7 +235,98 @@ public class MenuMain extends javax.swing.JFrame {
         }
 
     }
+
+    class PanelRojoAzul extends JPanel {
+
+        @Override
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+            Graphics2D g2 = (Graphics2D) g;
+
+            GradientPaint gp = new GradientPaint(
+                    0, 0, new Color(180, 0, 0), // Rojo cereza (parte superior)
+                    0, getHeight(), new Color(90, 0, 0) // Rojo burdeos (parte inferior)
+            );
+
+            g2.setPaint(gp);
+            g2.fillRect(0, 0, getWidth(), getHeight());
+        }
+
+    }
+
+    private void aplicarEstiloCasino(JButton boton) {
+        if (boton == null) {
+            return;
+        }
+        Color colorInicio = new Color(150, 0, 0);   // rojo vino elegante
+        Color colorFin = new Color(60, 0, 0);       // rojo oscuro profundo
+        Color colorTexto = new Color(255, 215, 0);  // dorado suave
+        Color colorBorde = new Color(90, 0, 0);     // borde tenue vino oscuro
+
+        // 🎨 Estilo de fuente
+        boton.setFont(new Font("Cambria", Font.BOLD, 16));
+        boton.setForeground(colorTexto);
+        boton.setFocusPainted(false);
+        boton.setBorder(BorderFactory.createCompoundBorder(
+                BorderFactory.createLineBorder(colorBorde, 2, true),
+                BorderFactory.createEmptyBorder(8, 18, 8, 18)
+        ));
+        boton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+
+        // 💫 Fondo gradiente (pintado manualmente)
+        boton.setContentAreaFilled(false);
+        boton.setOpaque(false);
+
+        boton.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseEntered(java.awt.event.MouseEvent e) {
+                boton.setForeground(new Color(255, 240, 120)); // dorado más brillante
+                boton.repaint();
+            }
+
+            @Override
+            public void mouseExited(java.awt.event.MouseEvent e) {
+                boton.setForeground(colorTexto);
+                boton.repaint();
+            }
+        });
+
+        // 🔧 Sobrescribir el método paint para el gradiente
+        boton.setUI(new javax.swing.plaf.basic.BasicButtonUI() {
+            @Override
+            public void paint(Graphics g, JComponent c) {
+                Graphics2D g2 = (Graphics2D) g.create();
+                g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = c.getWidth();
+                int h = c.getHeight();
+
+                GradientPaint gradiente = new GradientPaint(0, 0, colorInicio, 0, h, colorFin);
+                g2.setPaint(gradiente);
+                g2.fillRoundRect(0, 0, w, h, 15, 15);
+
+                // Borde suave
+                g2.setColor(colorBorde);
+                g2.drawRoundRect(0, 0, w - 1, h - 1, 15, 15);
+
+                g2.dispose();
+
+                super.paint(g, c);
+            }
+        });
+    }
+
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnPerfil;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
